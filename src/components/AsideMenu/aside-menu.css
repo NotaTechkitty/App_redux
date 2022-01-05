@@ -1,0 +1,9 @@
+.aside-container{
+    background-color: aqua;
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 100px;
+    box-shadow: 2px 1px 6px;
+}
