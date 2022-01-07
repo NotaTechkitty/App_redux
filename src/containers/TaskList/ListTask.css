@@ -1,0 +1,15 @@
+.list-container{
+    height: 100vh;
+}
+.task-item{
+    padding: 0px 10px;
+    box-shadow: 3px 2px 5px;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    height: 60px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}

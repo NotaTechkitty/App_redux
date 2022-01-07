@@ -1,3 +1,23 @@
 .wrapper{
-    margin-left: 50px;
+    margin-left: 40px;
+    padding: 20px;
+    transition: margin-left 0.5s linear;
+}
+.wrapper.menu-open{
+    margin-left: 200px;
+    transition: margin-left 0.5s linear;
+}
+.container{
+    height: 100vh;
+}
+
+.footer{
+    display: flex;
+    background-color: #343a40;
+    position: sticky;
+    bottom: 10px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0px 60px;
 }

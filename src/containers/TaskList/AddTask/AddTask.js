@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AddTask.css";
-function AddTaskComponent({ handleSubmit }) {
+function AddTaskComponent({ handleSubmit, className }) {
   const [input, setInput] = useState("");
   const handleOnChanged = (event) => {
     setInput(event.target.value);
@@ -10,19 +10,16 @@ function AddTaskComponent({ handleSubmit }) {
     event.preventDefault();
   };
   return (
-    <div className="header-container">
+    <div className={className}>
       <form onSubmit={submit} className="form-add">
-        <label>
-          {"Enter Task here : "}
-          <input
-          className="input-field"
-            type="text"
-            name="task"
-            value={input}
-            onChange={handleOnChanged}
-          />
-        </label>
         <input className="button-submit" type="submit" value="Add Task" />
+        <input
+          className="input-field"
+          type="text"
+          name="task"
+          value={input}
+          onChange={handleOnChanged}
+        />
       </form>
     </div>
   );

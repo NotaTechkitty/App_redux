@@ -1,9 +1,28 @@
 .aside-container{
-    background-color: aqua;
-    width: 50px;
+    background-color: #e5e5e5 ;
+    width: 40px;
     height: 100vh;
     position: fixed;
     top: 0px;
     z-index: 100px;
     box-shadow: 2px 1px 6px;
+    transition: width 0.5s linear;
+    border-top-right-radius: 4px;
+   
+}
+
+.aside-container.active{
+    width: 200px;
+    transition: width 0.5s linear;
+}
+
+.button-menu{
+    width: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    color: grey;
 }
